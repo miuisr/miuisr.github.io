@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description"
+        content="MIUI SR is a Project Focused on bulding super fast, smooth and highly customizable Roms. SR provides everything you wish MIUI had!" />
+    <meta name="keywords" content="miui sr, sr, miui, miuisr, MIUI SR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MIUI SR - The Smoothest MIUI You will Ever see!" />
+    <meta property="og:url" content="miuisr.github.io" />
+    <meta property="og:site_name" content="MIUISR" />
+    <meta name="author" content="adx69" />
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <title>MIUI SR - The Only MIUI You need.</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="intro">
+        <div class="intro-text">Fast</div>
+        <div class="intro-text">Smooth</div>
+        <div class="intro-text">Stable</div>
+    </div>
+    <main class="container home-container">
+        <section class="home-text">
+            <h1 class="home-text-main">
+                MIUI SR is a project <br />
+                Focused on Building <br />
+                <font class="red"> Fast and Smooth </font><br />
+                Custom Roms.
+            </h1>
+            <p class="home-text-description">Enjoy Your Stay!</p>
+        </section>
+        <section class="home-buttons">
+            <a href="https://telegram.me/MIUISR" class="btn btn-red">Telegram &nbsp;<span><i
+                        class="fa-brands fa-telegram"></i></span></a>
+            <a href="download.html" class="btn btn-white">Download &nbsp;<span><i
+                        class="fa-solid fa-download"></i></span></a>
+        </section>
+    </main>
+    <div class="credits">Designed By <span class="red">@ADX69</span></div>
+
+    <script>
+        TweenMax.staggerTo(
+            ".intro-text",
+            0.8,
+            {
+                delay: 0.3,
+                opacity: "1",
+                ease: Power4.easeInOut,
+            },
+            1
+        );
+
+        TweenMax.staggerTo(
+            ".intro-text",
+            0.7,
+            {
+                opacity: "0",
+                ease: Power4.easeInOut,
+                delay: 0.9,
+            },
+            1
+        );
+
+        TweenMax.to(
+            ".home-container",
+            1,
+            {
+                opacity: 1,
+                delay: 3,
+                ease: Power4.easeInOut,
+            },
+            1
+        );
+        TweenMax.from(
+            ".credits",
+            1,
+            {
+                opacity: 0,
+                x: -1000,
+                delay: 2,
+                ease: Power4.easeInOut,
+            },
+            1
+        );
+    </script>
+</body>
+
+</html>

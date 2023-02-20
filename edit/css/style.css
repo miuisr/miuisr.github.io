@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+
+/* ==================================================== */
+/* Base */
+/* ==================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* ==================================================== */
+/* Universal */
+/* ==================================================== */
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 4rem;
+    opacity: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-red {
+    background-color: red;
+    color: #fff;
+}
+
+.credits {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    font-weight: 500;
+}
+
+.red {
+    color: red !important;
+}
+
+/* ==================================================== */
+/* HOME */
+/* ==================================================== */
+
+.home-container {
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    opacity: 0;
+}
+
+.home-text {
+    font-size: 1rem;
+}
+
+.home-text-main {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home-text-description {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.home-buttons a {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.3rem;
+}
+
+/* ==================================================== */
+/* Downloads */
+/* ==================================================== */
+.download-container {
+    padding: 2rem;
+}
+
+.download-buttons {
+    width: min(25rem, 100%);
+    margin-inline: auto;
+}
+
+.download-buttons a {
+    display: block;
+    margin-top: 1rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* ==================================================== */
+/* Downloads */
+/* ==================================================== */
+
+.device-container {
+    opacity: 0;
+    align-items: center;
+    gap: 1rem;
+}
+
+.device-data {
+    width: min(21rem, 100%);
+    text-align: center;
+}
+
+.device-info {
+    margin-bottom: 2.5rem;
+}
+
+.device-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.dev {
+    font-weight: 500;
+}
+
+.device-buttons a {
+    display: block;
+    margin-top: 1rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+/* Popup */
+
+.popup-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.popup {
+    width: min(25rem, 100%);
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+    .device-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1048px) {
+}
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px) {
+}
+
+/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+@media screen and (min-width: 3840px) {
+}
