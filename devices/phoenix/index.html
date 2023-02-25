@@ -18,15 +18,26 @@
             </section>
             <section class="device-data">
                 <div class="device-info">
-                    <p class="device-name">POCO X2 / Redmi K30</p>
-                    <p class="dev">Dev - <span class="red">Retardpro</span></p>
+                    <p class="device-name" id="#device-name">POCO X2 / Redmi K30</p>
+                    <p class="dev" id="dev">Dev - <span class="red">Retardpro</span></p>
                 </div>
                 <div class="device-buttons">
-                    <a href="https://github.com/miuisr/" class="btn btn-white">Latest</a>
+                    <a href="https://github.com/miuisr/" class="btn btn-white" id="build">Latest</a>
                 </div>
             </section>
         </main>
 
         <script src="../../assets/js/devices.js"></script>
+        <script>
+            fetch("https://raw.githubusercontent.com/miuisr/device_vayu/main/device.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector("#device_name").innerText = data.Device_name;
+                    document.querySelector("#dev").innerText = data.Developer_name;
+                    document.querySelector("#build").innerText = data.Latest_build_name;
+                    document.querySelector("#build").href = data.Latest_build_link;
+                });
+        </script>
     </body>
 </html>
