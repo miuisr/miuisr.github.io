@@ -4,11 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vayu</title>
+        <title></title>
 
         <link rel="stylesheet" href="../../assets/css/style.css" />
         <script src="../../assets/js/gsap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     </head>
 
     <body>
@@ -18,15 +17,27 @@
             </section>
             <section class="device-data">
                 <div class="device-info">
-                    <p class="device-name">POCO X3</p>
-                    <p class="dev">Dev - <span class="red">Retardpro</span></p>
+                    <p class="device-name"></p>
+                    <p class="dev red"></p>
                 </div>
                 <div class="device-buttons">
-                    <a href="https://github.com/miuisr/" class="btn btn-white">Download</a>
+                    <a href="" class="btn btn-white" id="build"></a>
                 </div>
             </section>
         </main>
 
         <script src="../../assets/js/devices.js"></script>
+        <script>
+            fetch("https://raw.githubusercontent.com/miuisr/device_vayu/main/device.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector("title").innerText = data.Device_name;
+                    document.querySelector(".device-name").innerText = data.Device_name;
+                    document.querySelector(".dev").innerText = data.Developer_name;
+                    document.querySelector("#build").innerText = data.Latest_build_name;
+                    document.querySelector("#build").href = data.Latest_build_link;
+                });
+        </script>
     </body>
 </html>
