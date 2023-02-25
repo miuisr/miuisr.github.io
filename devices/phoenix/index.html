@@ -8,12 +8,24 @@
 
         <link rel="stylesheet" href="../../assets/css/style.css" />
         <script src="../../assets/js/gsap.min.js"></script>
+        <script>
+            fetch("https://raw.githubusercontent.com/miuisr/device_vayu/main/device.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector("title").innerText = data.Device_name;
+                    document.querySelector(".device-name").innerText = data.Device_name;
+                    document.querySelector(".dev").innerText = data.Developer_name;
+                    document.querySelector("#build").innerText = data.Latest_build_name;
+                    document.querySelector("#build").href = data.Latest_build_link;
+                });
+        </script>
     </head>
 
     <body>
         <main class="container device-container">
             <section class="device-img">
-                <img src="../../assets/img/phoenix.png" alt="lkmsc" />
+                <img src="../../assets/img/vayu.png" alt="lkmsc" />
             </section>
             <section class="device-data">
                 <div class="device-info">
@@ -27,17 +39,5 @@
         </main>
 
         <script src="../../assets/js/devices.js"></script>
-        <script>
-            fetch("https://raw.githubusercontent.com/miuisr/device_vayu/main/device.json")
-                .then((response) => response.json())
-                .then((data) => {
-                    console.log(data);
-                    document.querySelector("title").innerText = data.Device_name;
-                    document.querySelector(".device-name").innerText = data.Device_name;
-                    document.querySelector(".dev").innerText = data.Developer_name;
-                    document.querySelector("#build").innerText = data.Latest_build_name;
-                    document.querySelector("#build").href = data.Latest_build_link;
-                });
-        </script>
     </body>
 </html>
