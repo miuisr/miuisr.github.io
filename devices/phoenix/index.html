@@ -28,16 +28,16 @@
 
         <script src="../../assets/js/devices.js"></script>
         <script>
-            const url = "https://cloud.miuisr.ml/api/raw/?path=/MIUISR/Devices/vayu.json";
-
-            const fetchJson = async () => {
-                try {
-                    const data = await fetch(url);
-                    const response = await data.json();
-                } catch (error) {
-                    console.log(error);
-                }
-            };
+            fetch("https://cloud.miuisr.ml/api/raw/?path=/MIUISR/Devices/vayu.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector("title").innerText = data.Device_name;
+                    document.querySelector(".device-name").innerText = data.Device_name;
+                    document.querySelector(".dev").innerText = data.Developer_name;
+                    document.querySelector("#build").innerText = data.Latest_build_name;
+                    document.querySelector("#build").href = data.Latest_build_link;
+                });
         </script>
     </body>
 </html>
