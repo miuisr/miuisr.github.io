@@ -32,7 +32,8 @@
                     <p class="dev red"></p>
                 </div>
                 <div class="device-buttons">
-                    <a href="" class="btn btn-white" id="build"></a>
+                    <a href="" class="btn btn-red" id="build"></a>
+                    <a href="" class="btn btn-white" id="changelog">Changelog</a>
                 </div>
             </section>
         </main>
@@ -48,6 +49,7 @@
                     document.querySelector(".dev").innerText = data.Developer_name;
                     document.querySelector("#build").innerText = data.Latest_build_name;
                     document.querySelector("#build").href = data.Latest_build_link;
+                    document.querySelector("#changelog").href = data.changelog;
                 });
         </script>
     </body>
