@@ -26,9 +26,8 @@ body {
 }
 
 /*  */
-.btn:hover {
-    background-color: #654c4f;
-    color: #fff;
+a:visited {
+    text-decoration: none;
 }
 
 /* -------------------------------------------
