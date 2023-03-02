@@ -1,20 +1,21 @@
-TweenMax.staggerTo(
-    ".devices",
-    0.8,
+TweenMax.to(
+    ".home",
+    0.5,
     {
         delay: 1.3,
-        opacity: 1,
+        opacity: "1",
         ease: Power4.easeInOut,
     },
-    0.2
+    1
 );
-TweenMax.staggerTo(
+
+TweenMax.to(
     ".btn",
-    0.8,
+    0.5,
     {
         delay: 1.4,
-        opacity: 1,
+        opacity: "1",
         ease: Power4.easeInOut,
     },
-    0.2
+    1
 );

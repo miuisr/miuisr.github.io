@@ -9,101 +9,58 @@
                 dataLayer.push(arguments);
             }
             gtag("js", new Date());
-
             gtag("config", "G-CRER65Y0NP");
         </script>
+
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="description" content="MIUI SR is a Project Focused on bulding super fast, smooth and highly customizable Roms. SR provides everything you wish MIUI had!" />
-        <meta name="keywords" content="miui sr, sr, miui, miuisr, MIUI SR" />
+        <meta name="description" content="MIUI SR Edition is a Project Focused on bulding super fast, smooth and highly customizable Roms. SR Edition Custom Roms provides everything you wish MIUI had! MIUISR gives decent support to many devices" />
+        <meta name="keywords" content="miui sr, miuisr, sr, miui, MIUI SR edition" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="MIUI SR - The Smoothest MIUI You will Ever see!" />
-        <meta property="og:url" content="miuisr.github.io" />
+        <meta property="og:title" content="MIUI SR Edition - The Smoothest MIUI You will Ever see! MIUISR" />
+        <meta property="og:url" content="miuisr.ml" />
         <meta property="og:site_name" content="MIUISR" />
         <meta name="author" content="adx69" />
 
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-        <title>MIUI SR - The Only MIUI You need.</title>
+        <title>MIUISR - The Only Rom you need.</title>
 
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <script src="assets/js/gsap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/base.css" />
+        <link rel="stylesheet" href="assets/css/index.css" />
+
+        <script src="assets/js/modules/gsap.min.js"></script>
+        <script src="assets/js/modules/gsap.scroll.min.js"></script>
     </head>
-
     <body>
-        <div class="intro">
-            <div class="intro-text">Fast</div>
-            <div class="intro-text">Smooth</div>
-            <div class="intro-text">Stable</div>
+        <!-- Code start -->
+        <div class="container">
+            <div class="home">
+                <h1>MIUI <span class="red">SR</span> is a project<br />Focused on Building <br /><span class="red">Fast</span> and <span class="red">Smooth</span> <br />Custom Roms.</h1>
+                <a href="devices/" class="btn btn-red">Download <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#contact" class="btn btn-black">About Us</a>
+            </div>
+
+            <a name="contact"></a>
+
+            <div class="contact-us">
+                <a href="https://www.github.com/miuisr" class="btn btn-black"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="https://telegram.me/miuisr" class="btn btn-black"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                <a href="mailto:support@miuisr.ml" class="btn btn-black"><i class="fa-regular fa-envelope"></i> Email</a>
+            </div>
         </div>
-        <main class="container home-container">
-            <section class="home-text">
-                <h1 class="home-text-main">
-                    MIUI SR is a project <br />
-                    Focused on Building <br />
-                    <font class="red"> Fast and Smooth </font><br />
-                    Custom Roms.
-                </h1>
-                <p class="home-text-description">Enjoy Your Stay!</p>
-            </section>
-            <section class="home-buttons">
-                <a href="https://telegram.me/MIUISR" class="btn btn-red"
-                    >Telegram &nbsp;<span><i class="fa-brands fa-telegram"></i></span
-                ></a>
-                <a href="devices/" class="btn btn-white"
-                    >Devices &nbsp;<span><i class="fa-solid fa-download"></i></span
-                ></a>
-            </section>
-        </main>
-        <div class="credits">Designed By <span class="red">@ADX69</span></div>
+        <!-- Code end -->
 
-        <script>
-            TweenMax.staggerTo(
-                ".intro-text",
-                0.8,
-                {
-                    delay: 0.3,
-                    opacity: "1",
-                    ease: Power4.easeInOut,
-                },
-                1
-            );
+        <!-- Loader and credits -->
+        <div class="loader">MIUI<span class="f700 red">SR</span>.</div>
+        <div class="credits white fw500">By <span class="red">ADX</span></div>
+        <!-- Loader and credits -->
 
-            TweenMax.staggerTo(
-                ".intro-text",
-                0.7,
-                {
-                    opacity: "0",
-                    ease: Power4.easeInOut,
-                    delay: 0.9,
-                },
-                1
-            );
-
-            TweenMax.to(
-                ".home-container",
-                1,
-                {
-                    opacity: 1,
-                    delay: 3,
-                    ease: Power4.easeInOut,
-                },
-                1
-            );
-            TweenMax.from(
-                ".credits",
-                1,
-                {
-                    opacity: 0,
-                    x: -1000,
-                    delay: 2,
-                    ease: Power4.easeInOut,
-                },
-                1
-            );
-        </script>
+        <!-- Scripts Imported -->
+        <script src="assets/js/loader.js"></script>
+        <script src="assets/js/index.js"></script>
+        <!-- Scripts Imported End -->
     </body>
 </html>

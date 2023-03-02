@@ -9,41 +9,50 @@
                 dataLayer.push(arguments);
             }
             gtag("js", new Date());
-
             gtag("config", "G-CRER65Y0NP");
         </script>
+
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Devices</title>
 
-        <link rel="stylesheet" href="../assets/css/style.css" />
-        <script src="js/gsap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <meta name="description" content="MIUI SR Edition is a Project Focused on bulding super fast, smooth and highly customizable Roms. SR Edition Custom Roms provides everything you wish MIUI had! MIUISR gives decent support to many devices" />
+        <meta name="keywords" content="miui sr, miuisr, sr, miui, MIUI SR edition, devices, download" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="MIUI SR Edition - Devices List " />
+        <meta property="og:url" content="miuisr.ml" />
+        <meta property="og:site_name" content="MIUISR" />
+        <meta name="author" content="adx69" />
+
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+
+        <title>MIUISR | Devices</title>
+
+        <link rel="stylesheet" href="../assets/css/base.css" />
+        <link rel="stylesheet" href="../assets/css/devices.css" />
+
+        <script src="../assets/js/modules/gsap.min.js"></script>
+        <script src="../assets/js/modules/gsap.scroll.min.js"></script>
     </head>
-
     <body>
-        <main class="container download-container">
-            <section class="download-buttons">
-                <a href="vayu/" class="btn btn-white">Vayu / Bhima</a>
-                <a href="phoenix/" class="btn btn-white">Phoenix</a>
-                <a href="index.html" class="btn btn-red"
-                    ><span><i class="fa-solid fa-arrow-left-long"></i></span>&nbsp; Back</a
-                >
-            </section>
-        </main>
-        <script>
-            TweenMax.staggerFrom(
-                ".download-buttons > a",
-                0.8,
-                {
-                    delay: 0.3,
-                    opacity: "0",
-                    x: -200,
-                    ease: Power4.easeInOut,
-                },
-                0.02
-            );
-        </script>
+        <!-- Code start -->
+        <div class="container">
+            <div class="devices">
+                <a href="phoenix/" class="btn btn-white">Pheonix</a>
+                <a href="vayu/" class="btn btn-white">Vayu</a>
+                <a href="../index.html" class="btn btn-red">Go Back</a>
+            </div>
+        </div>
+        <!-- Code end -->
+
+        <!-- Loader and credits -->
+        <div class="loader">MIUI<span class="f700 red">SR</span>.</div>
+        <div class="credits white fw500">By <span class="red">ADX</span></div>
+        <!-- Loader and credits -->
+
+        <!-- Scripts Imported -->
+        <script src="../assets/js/loader.js"></script>
+        <script src="../assets/js/devices.js"></script>
+        <!-- Scripts Imported End -->
     </body>
 </html>

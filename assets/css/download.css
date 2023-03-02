@@ -1,0 +1,24 @@
+.container,
+.btns {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.device-info,
+.btns {
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn {
+    padding: 0.8rem 4rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    width: min(75%, 18rem);
+    /* opacity: 0; */
+}
