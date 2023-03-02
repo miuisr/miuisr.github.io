@@ -13,7 +13,7 @@ font-family: "Space Grotesk", sans-serif;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    box-shadow: none;
+    border: none;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
@@ -41,10 +41,6 @@ Loader
     font-size: 4.5rem;
     opacity: 0;
     pointer-events: none;
-}
-
-a {
-    border: none;
 }
 
 /* -------------------------------------------
