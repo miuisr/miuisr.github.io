@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRER65Y0NP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-CRER65Y0NP");
+        </script>
+        <!-- Google tag (gtag.js) -->
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="description" content="MIUI SR is a Project Focused on building faster , smoother and highly customizable Rom . SR provides everything you wish miui had !" />
+        <meta name="keywords" content="miui sr, miuisr, sr, miui, MIUI SR edition, devices, download, alioth" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="MIUI SR Edition - Devices List " />
+        <meta property="og:url" content="miuisr.ml" />
+        <meta property="og:site_name" content="MIUISR" />
+        <meta name="author" content="adx69" />
+
+        <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico" />
+
+        <title>MIUISR | POCO X3 | Surya</title>
+
+        <link rel="stylesheet" href="../../assets/css/base.css" />
+        <link rel="stylesheet" href="../../assets/css/download.css" />
+
+        <script src="../../assets/js/modules/gsap.min.js"></script>
+        <script src="../../assets/js/modules/gsap.scroll.min.js"></script>
+    </head>
+    <body>
+        <!-------------- Code start ------------------->
+        <div class="container">
+            <img src="../../assets/img/surya.png" alt="Surya" />
+            <div class="device-info">
+                <h1 id="device-name"></h1>
+                <h3 class="red" id="dev"></h3>
+                <div class="btns">
+                    <button type="submit" class="btn btn-red" id="latest"></button>
+                    <button type="button" class="btn btn-black" onclick="window.location.href='https://miuisr.ml/device_surya/changelog.txt'">Changelog</button>
+                </div>
+            </div>
+        </div>
+        <!-------------- Code end ------------------->
+
+        <!-- Loader and credits -->
+        <div class="loader"><span class="f700 red"></span></div>
+        <!-- <div class="credits fw500">By <span class="red">ADX</span></div> -->
+        <!-- Loader and credits -->
+
+        <!-- Scripts Imported -->
+        <script src="../../assets/js/loader.js"></script>
+        <script src="../../assets/js/download.js"></script>
+        <!-- Scripts Imported End -->
+
+        <!-- Scripts -->
+        <script>
+            fetch("https://miuisr.ml/device_surya/data.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector("#device-name").innerHTML = data.Device_name;
+                    document.querySelector("#dev").innerHTML = data.Developer_name;
+                    document.querySelector("#latest").innerHTML = data.Latest_build_name;
+
+                    document.getElementById("latest").addEventListener("click", redirectFunction);
+                    function redirectFunction() {
+                        window.location.href = data.Latest_build_link;
+                    }
+                });
+        </script>
+        <!-- Scripts End -->
+    </body>
+</html>
