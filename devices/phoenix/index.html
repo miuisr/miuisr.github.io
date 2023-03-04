@@ -44,7 +44,7 @@
                 <h3 class="red" id="dev"></h3>
                 <div class="btns">
                     <button type="submit" class="btn btn-red" id="latest"></button>
-                    <button type="button" class="btn btn-black" id="changelog">Changelog</button>
+                    <button type="button" class="btn btn-black" onclick="window.location.href='https://miuisr.ml/device_phoenix/changelog.txt'">Changelog</button>
                 </div>
             </div>
         </div>
@@ -73,11 +73,6 @@
                     document.getElementById("latest").addEventListener("click", redirectFunction);
                     function redirectFunction() {
                         window.location.href = data.Latest_build_link;
-                    }
-
-                    document.getElementById("changelog").addEventListener("click", Changelogfn);
-                    function Changelogfn() {
-                        window.location.href = data.Changelog;
                     }
                 });
         </script>
