@@ -19,14 +19,14 @@ TweenMax.to(
     0.2
 );
 
-TweenMax.from(
-    ".credits",
-    0.5,
-    {
-        delay: 1.3,
-        opacity: "0",
-        x: -100,
-        ease: Power4.easeInOut,
-    },
-    1
-);
+// TweenMax.from(
+//     ".credits",
+//     0.5,
+//     {
+//         delay: 1.3,
+//         opacity: "0",
+//         x: -100,
+//         ease: Power4.easeInOut,
+//     },
+//     1
+// );

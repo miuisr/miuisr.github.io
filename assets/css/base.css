@@ -29,6 +29,11 @@ body {
     height: 100%;
 }
 
+.container {
+    background-color: #000;
+    color: #fff;
+}
+
 /*  */
 
 /* -------------------------------------------
