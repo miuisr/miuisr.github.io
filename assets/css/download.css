@@ -22,3 +22,7 @@
     width: min(75%, 18rem);
     /* opacity: 0; */
 }
+
+.device-info p {
+    font-size: 2rem;
+}
